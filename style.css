@@ -1,59 +1,60 @@
 * {
     box-sizing: border-box;
-  }
-  
-  :root {
+}
+
+:root {
     height: 100%;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
-  
+    overflow-x: hidden;
+
     background: #013044;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
-  }
+}
 
-  header {
+header {
     display: flex;
     justify-content: space-around;
-  }
+}
 
-  .cafe {
+.cafe {
     width: 30px;
     margin-right: 10px;
-  }
+}
 
-  .esconder {
+.esconder {
     opacity: 0;
-  }
+}
 
-  #titulo {
+#titulo {
     color: white;
     margin-left: 50px;
-  }
+}
 
-  #titulo2 {
+#titulo2 {
     color: white;
     margin-left: 50px;
-  }
+}
 
-  .tudo {
+.tudo {
     margin: 0;
-  }
+}
 
-  .escolher {
+.escolher {
     width: 500px;
     margin-left: 400px;
     margin-top: 100px;
     margin-bottom: -150px;
     color: white;
     -webkit-text-stroke: 0.5px black;
-  }
+}
 
-  .escolher2 {
+.escolher2 {
     text-align: center;
     margin-top: 200px;
     font-weight: bold;
@@ -61,9 +62,9 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
     color: rgba(255, 255, 255, 0.63);
-  }
+}
 
-  #final {
+#final {
     margin-left: 600px;
     margin-top: 20px;
     border: none;
@@ -73,9 +74,9 @@
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
-  }
+}
 
-  #final:hover {
+#final:hover {
     border: none;
     height: 30px;
     border-radius: 30px;
@@ -84,9 +85,9 @@
     background-color: rgba(0, 0, 0, 0.651);
     color: white;
     text-decoration: none;
-  }
+}
 
-  #voltar {
+#voltar {
     margin-left: 630px;
     margin-top: 100px;
     border: none;
@@ -96,9 +97,9 @@
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
-  }
+}
 
-  #voltar:hover {
+#voltar:hover {
     border: none;
     height: 30px;
     border-radius: 30px;
@@ -107,13 +108,13 @@
     background-color: rgba(0, 0, 0, 0.651);
     color: white;
     text-decoration: none;
-  }
+}
 
-  img {
+img {
     width: 100px;
-  }
-  
-  #esconder {
+}
+
+#esconder {
     margin-left: 400px;
     margin-top: 150px;
     border: none;
@@ -122,9 +123,9 @@
     width: 80px;
     font-weight: bold;
     cursor: pointer;
-  }
+}
 
-  #esconder:hover {
+#esconder:hover {
     margin-left: 400px;
     margin-top: 150px;
     border: none;
@@ -134,15 +135,15 @@
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.651);
     color: white;
-  }
+}
 
-  body {
+body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-  }
-  
-  .list {
+}
+
+.list {
     display: flex;
     flex-direction: column;
     max-width: 500px;
@@ -150,9 +151,9 @@
     gap: 10px 0;
     margin-top: 30px;
     margin-left: 400px;
-  }
-  
-  .list__item {
+}
+
+.list__item {
     width: 100%;
     background: white;
     padding: 15px;
@@ -165,9 +166,9 @@
     align-items: center;
     position: relative;
     will-change: transform;
-  }
-  
-  .drag-handle {
+}
+
+.drag-handle {
     position: absolute;
     right: 0;
     width: 44px;
@@ -175,38 +176,95 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  #h1 {
+#h1 {
     position: relative;
     margin-top: -20rem;
 
-  }
+}
 
-  #h2 {
+#h2 {
     margin-left: 1000px;
-  }
-  
-  .drag-handle::after {
+}
+
+.drag-handle::after {
     content: '⠿';
     font-size: 25px;
     color: #00000099;
-  }
-  
-  .list__item.is-idle .drag-handle {
+}
+
+.list__item.is-idle .drag-handle {
     cursor: grab;
-  }
-  
-  .list__item.is-idle {
+}
+
+.list__item.is-idle {
     transition: 0.25s ease transform;
-  }
-  
-  .list__item.is-draggable,
-  .list__item.is-draggable .drag-handle {
+}
+
+.list__item.is-draggable,
+.list__item.is-draggable .drag-handle {
     cursor: grabbing;
-  }
-  
-  .list__item.is-draggable {
+}
+
+.list__item.is-draggable {
     z-index: 10;
-  }
-  
+}
+
+@media (max-width: 560px) {
+    .list {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        width: 90%;
+        gap: 10px 0;
+        margin-top: 30px;
+        margin-left: 20px;
+
+    }
+
+    #final {
+        margin-left: 200px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        border: none;
+        height: 30px;
+        border-radius: 30px;
+        width: 80px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .escolher h3 {
+        text-align: center;
+        width: 450px;
+        margin-left: -390px;
+        margin-top: 100px;
+        margin-bottom: -120px;
+        color: white;
+        -webkit-text-stroke: 0.5px black;
+    }
+
+    #titulo {
+        text-align: center;
+    }
+
+    #voltar {
+        margin-left: 210px;
+        margin-bottom: 50px;
+    }
+
+    #titulo2 {
+        text-align: center;
+    }
+
+    .logooo {
+        width: 100px;
+        height: 100px;
+    }
+
+    body {
+        overflow: hidden;
+    }
+}
