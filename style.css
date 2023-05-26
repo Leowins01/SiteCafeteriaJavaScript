@@ -357,7 +357,7 @@ body {
     .escolher h3 {
         text-align: center;
         width: 450px;
-        margin-left: -390px;
+        margin-left: -4rem;
         margin-top: 100px;
         margin-bottom: -120px;
         color: white;
@@ -374,7 +374,7 @@ body {
     }
 
     #esconder {
-        margin-left: 25rem;
+        margin-left: 5rem;
         background-color: red;
     }
 
@@ -389,5 +389,14 @@ body {
 
     body {
         overflow: hidden;
+    } 
+
+}
+
+@media (max-width: 478px) {
+    .escolher h3 {
+        margin-left: -1rem;
+        width: 15rem;
+        margin-bottom: 10px;
     }
 }
