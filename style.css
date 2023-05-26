@@ -125,7 +125,7 @@ img {
     cursor: pointer;
 }
 
-#esconder:hover {
+#ola:hover {
     margin-left: 400px;
     margin-top: 150px;
     border: none;
@@ -219,8 +219,126 @@ body {
         width: 90%;
         gap: 10px 0;
         margin-top: 30px;
-        margin-left: 20px;
+        margin-left: 20rem;
+    }
 
+    #final {
+        margin-left: 33rem;
+    }
+
+    .escolher {
+        margin-left: 20rem;
+    }
+
+    #esconder {
+        background-color: red;
+        margin-left: 20rem;
+    }
+
+    #titulo {
+        text-align: center;
+    }
+}
+
+@media (max-width: 950px) {
+    .list {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        width: 90%;
+        gap: 10px 0;
+        margin-top: 30px;
+        margin-left: 15rem;
+        background-color: red;
+    }
+
+    #final {
+        margin-left: 28rem;
+    }
+
+    .escolher {
+        margin-left: 15rem;
+    }
+
+    #esconder {
+        background-color: rgb(70, 51, 51);
+        margin-left: 15rem;
+    }
+
+    #titulo {
+        text-align: center;
+    }
+}
+
+@media (max-width: 850px) {
+    .list {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        width: 90%;
+        gap: 10px 0;
+        margin-top: 30px;
+        margin-left: 10rem;
+        background-color: red;
+    }
+
+    #final {
+        margin-left: 23rem;
+    }
+
+    .escolher {
+        margin-left: 10rem;
+    }
+
+    #esconder {
+        background-color: rgb(70, 51, 51);
+        margin-left: 10rem;
+    }
+
+    #titulo {
+        text-align: center;
+    }
+}
+
+@media (max-width: 680px) {
+    .list {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        width: 90%;
+        gap: 10px 0;
+        margin-top: 30px;
+        margin-left: 5rem;
+        background-color: red;
+    }
+
+    #final {
+        margin-left: 18rem;
+    }
+
+    .escolher {
+        margin-left: 5rem;
+    }
+
+    #esconder {
+        background-color: rgb(70, 51, 51);
+        margin-left: 5rem;
+    }
+
+    #titulo {
+        text-align: center;
+    }
+}
+
+@media (max-width: 560px) {
+    .list {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        width: 90%;
+        gap: 10px 0;
+        margin-top: 30px;
+        margin-left: 20px;
     }
 
     #final {
